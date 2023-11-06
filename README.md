@@ -1,5 +1,3 @@
-Aquí tienes un ejemplo de un archivo README para describir una API de comandos de Git:
-
 # Git Commands API
 
 La **Git Commands API** es una interfaz de programación de aplicaciones que te permite interactuar con y gestionar descripciones de comandos de Git. Esta API proporciona una forma programática de obtener información detallada sobre los comandos de Git, sus usos y funcionalidades.
@@ -23,13 +21,13 @@ Para utilizar la **Git Commands API**, debes realizar solicitudes HTTP a los pun
 ### Ejemplo de solicitud GET para obtener información sobre un comando:
 
 ```
-GET /api/git-commands/{nombre-del-comando}
+GET /api/commands/{nombre-del-comando}
 ```
 
 ### Ejemplo de solicitud POST para agregar una descripción personalizada:
 
 ```
-POST /api/git-commands/{nombre-del-comando}/descripcion
+POST /api/commands/
 {
   "descripcion": "Esta es una descripción personalizada del comando Git."
 }
